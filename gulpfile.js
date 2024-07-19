@@ -15,7 +15,7 @@ function styles() {
 				})
 			)
 			.pipe(concat("style.min.css"))
-			.pipe(scss({ outputStyle: "compressed" }))
+			.pipe(scss({ outputStyle: "expanded" }))
 			// expanded - полностью развёрнутый CSS;
 			// nested - показывает вложенность (по умолчанию);
 			// compact - каждый селектор на новой строке;
@@ -34,7 +34,7 @@ function scripts() {
 }
 
 function watching() {
-	watch(["app/scss/style.scss"], styles);
+	watch(["app/scss/*.scss"], styles);
 	watch(["app/js/script.js"], scripts);
 	watch(["app/**/*.html"]).on("change", browserSync.reload);
 }
