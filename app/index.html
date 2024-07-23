@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/style.min.css" />
 	</head>
 	<body>
@@ -13,9 +14,35 @@
 				<div class="container">header</div>
 			</header>
 			<main class="main">
-				<section class="section section_hero" style="background-image: url('./imgs/Hero.jpg');">
-					<div class="container">
-						
+				<section class="section hero">
+					<div class="container hero__in">
+						<h1 class="hero__title">Building things is our mission.</h1>
+						<div class="hero__slider_w">
+							<div class="hero_slider swiper heroSlider">
+								<div class="hero_slider__in swiper-wrapper">
+									<div class="hero_slider__item swiper-slide">
+										<h4 class="hero_slider__title">Feature Projects</h4>
+										<div class="hero_slider__descr">The National University of Architecture</div>
+									</div>
+									<div class="hero_slider__item swiper-slide">
+										<h4 class="hero_slider__title">Feature Projects2</h4>
+										<div class="hero_slider__descr">22The National University of Architecture</div>
+									</div>
+									<div class="hero_slider__item swiper-slide">
+										<h4 class="hero_slider__title">Feature Projects3</h4>
+										<div class="hero_slider__descr">33The National University of Architecture</div>
+									</div>
+								</div>
+								<nav class="hero_slider__nav">
+									<div class="hero_slider__btn hero_slider__btn--prev heroSliderPrev">
+										<span> Back </span>
+									</div>
+									<div class="hero_slider__btn hero_slider__btn--next heroSliderNext">
+										<span> Next </span>
+									</div>
+								</nav>
+							</div>
+						</div>
 					</div>
 				</section>
 			</main>
@@ -23,6 +50,7 @@
 				<div class="container">footer</div>
 			</footer>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script type="module" src="./js-min/script.min.js"></script>
 	</body>
 </html>

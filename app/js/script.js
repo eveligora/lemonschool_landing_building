@@ -1,6 +1,7 @@
-hello();
-
-const body = document.querySelector('body');
-const container = document.querySelector('.container');
-const new_js = document.querySelector('.new_js');
-
+const swiper = new Swiper(".heroSlider", {
+	loop: true,
+	navigation: {
+		nextEl: ".heroSliderPrev",
+		prevEl: ".heroSliderNext",
+	},
+});
