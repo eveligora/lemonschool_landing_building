@@ -1,0 +1,39 @@
+.cta {
+	// @extend %main_font;
+}
+
+// .hero {
+// 	color: yellowgreen;
+
+// 	@extend %test_bg;
+// 	@extend %main_font;
+// }
+
+// .test {
+// 	height: 30rem;
+// 	width: 50em;
+
+// 	@extend %main_font;
+// 	@extend %test_bg;
+// }
+
+// .test_2 {
+// 	background-color:aquamarine;
+// 	@include test_2(height, 2rem);
+// }
+
+// .test_3 {
+// 	background-color:bisque;
+// 	@include test_2;
+// }
+
+.cta__btn {
+	@extend %transp_btn_1;
+	@extend %btn_size_1;
+
+}
+
+.test__btn {
+	@extend %blue_btn_1;
+	@extend %btn_size_1;
+}

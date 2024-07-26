@@ -52,4 +52,4 @@ exports.scripts = scripts;
 exports.watching = watching;
 exports.browsersync = browsersync;
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(watching, styles, scripts, browsersync);

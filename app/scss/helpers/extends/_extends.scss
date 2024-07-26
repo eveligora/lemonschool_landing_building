@@ -1,0 +1,36 @@
+%contain_image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+%cover_image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+%test_bg {
+	background-color: tomato;
+}
+
+%main_font {
+	font-size: 3rem;
+	font-weight: 500;
+}
+
+@mixin test {
+	height: 30rem;
+	font-size: 10rem;
+	font-weight: 700;
+}
+
+@mixin test_2($par_1: height, $par_2: 3rem) {
+	#{$par_1}: 30rem;
+	font-size: #{$par_2};
+	font-weight: 700;
+}
