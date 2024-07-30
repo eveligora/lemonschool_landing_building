@@ -25,7 +25,13 @@
 }
 
 .header__nav_w {
-	margin-left: auto;
+	@include bp($point_2, min) {
+		margin-left: auto;
+	}
+
+	@include bp($point_3) {
+		display: none;
+	}
 }
 
 .header_nav {
