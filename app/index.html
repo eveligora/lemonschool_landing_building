@@ -11,7 +11,22 @@
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<div class="container">header</div>
+				<div class="container header__in">
+					<div class="header__logo">
+						<div class="logo">
+							<img src="./imgs/logo.svg" alt="Logo" class="logo__img" />
+						</div>
+					</div>
+					<div class="header__nav_w">
+						<nav class="header_nav">
+							<a href="#" class="header_nav__link">Home</a>
+							<a href="#about" class="header_nav__link"> About Us </a>
+							<a href="#" class="header_nav__link"> Projects </a>
+							<a href="#" class="header_nav__link"> Services </a>
+							<a href="#" class="header_nav__link active"> Contact Us</a>
+						</nav>
+					</div>
+				</div>
 			</header>
 			<main class="main">
 				<section class="section hero">
@@ -62,7 +77,53 @@
 					</div>
 				</section>
 
-				<section class="section test"></section>
+				<section class="section" id="about">
+					<div class="container">
+						<div class="about">
+							<div class="about__media_w">
+
+									<picture class="about__media">
+										<source
+											media="(min-width: 650px)"
+											srcset="
+												https://images.unsplash.com/photo-1722218530941-fb046c70bb30?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+											"
+										/>
+										<source
+											media="(min-width: 465px)"
+											srcset="
+												https://images.unsplash.com/photo-1721074899655-7dd51f4e9366?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+											"
+										/>
+										<img
+											src="./imgs/about_img_2x.jpg"
+											alt="About Us picture"
+											class="about__media_img"
+										/>
+									</picture>
+								
+							</div>
+							<div class="about__info_w">
+								<div class="about_info">
+									<h2 class="about_info__title">About us</h2>
+									<div class="about_info__descr">
+										<p>
+											For more than 30 years we have been delivering world-class construction and
+											we’ve built many lasting relationships along the way.
+										</p>
+										<p>
+											We’ve matured into an industry leader and trusted resource for those seeking
+											quality, innovation and reliability when building in the U.S.
+										</p>
+									</div>
+									<div class="about_info__btn">
+										<a href="#" class="btn_white_1"> More on Our History </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 				<section class="section test_2"></section>
 				<section class="section test_3"></section>
 			</main>

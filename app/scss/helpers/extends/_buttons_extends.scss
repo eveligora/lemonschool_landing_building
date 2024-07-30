@@ -18,36 +18,32 @@
 //color extends
 %transp_btn_1 {
 	@include st_btn;
-	
+
 	font-weight: 700;
 	color: $color_white;
 	background-color: transparent;
 	transition: 0.3s ease;
 	border: 2px solid $color_white;
 
-	
 	&:hover {
 		background-color: $color_white;
 		color: $color_black;
 	}
-	
 }
 
-%blue_btn_1 {
+%white_btn_1 {
 	@include st_btn;
 
-	font-weight: 700;
-	color: $color_white;
-	background-color: blue;
-	transition: 0.3s ease;
-	border: 2px solid $color_white;
+	font-weight: 600;
+	color: $color_accent;
+	background-color: $color_white;
+	transition: $transition_dur ease;
+	border: 1px solid $color_white;
 
-	
 	&:hover {
-		background-color: $color_white;
-		color: $color_black;
+		background-color: $color_accent;
+		color: $color_white;
 	}
-	
 }
 
 //size extends
@@ -60,4 +56,9 @@
 	font-size: 1.6rem;
 
 	border-radius: 2px;
+}
+
+.btn_white_1 {
+	@extend %white_btn_1;
+	@extend %btn_size_1;
 }
