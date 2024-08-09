@@ -45,13 +45,12 @@
 	font-size: 1.8rem;
 	color: #14171f;
 	text-decoration: none;
-	transition: color $transition_dur ease-in-out;
+	transition: all $transition_dur ease-in-out;
 
-	&.active,
 	&:hover,
-	&:active,
-	&:focus {
-		font-weight: 600;
+	&:active {
+		// font-weight: 600;
+		text-shadow: 1px 0px 0px $color_hover;
 		color: $color_hover;
 	}
 }
