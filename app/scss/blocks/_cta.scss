@@ -29,11 +29,13 @@
 // }
 
 .cta {
-	color: $color_white;
 	display: flex;
+	align-items: center;
 	column-gap: 3rem;
-
-	max-width: 117rem;
+	
+	max-width: 116rem;
+	
+	color: $color_white;
 }
 
 .cta__info {

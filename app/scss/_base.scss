@@ -15,6 +15,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	overflow: hidden;
 }
 
 
@@ -53,6 +54,10 @@ body {
 			content: "";
 			background: rgba(0, 0, 0, 0.7);
 		}
+	}
+
+	&.section--overflow {
+		overflow: hidden;
 	}
 }
 
